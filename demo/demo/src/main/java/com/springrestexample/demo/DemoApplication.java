@@ -21,17 +21,11 @@ public class DemoApplication {
 		Log.info("Welcome to Rest");
 	}
 
-//	@Scheduled(fixedRate = 2000L)
-//	@Scheduled(fixedDelay = 3000L, initialDelay = 3000L)
-//	@Scheduled(fixedDelay = "PT3S" or "PT3M" or "PT3H", initialDelay = 3000L)
-	@Scheduled(cron = "*/2 * * * * *")
-	public void job1() throws InterruptedException{
-		Log.info("job1 current time:"+new Date());
-		Thread.sleep(1000L);
-	}
-	@Scheduled(cron = "*/2 * * * * *")
-	public void job2() throws InterruptedException{
-		Log.info("job2 current time:"+new Date());
-		Thread.sleep(1000L);
-	}
+	    @Scheduled(cron = "*/2 * * * * *")
+    public void job1() throws InterruptedException{
+        Log.info("job1 current time:"+new Date());
+        Thread.sleep(1000L);
+    }
+
+
 }

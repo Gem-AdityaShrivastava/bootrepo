@@ -31,7 +31,7 @@ public class EmployeeController {
 //        }catch (Exception e) {
 //            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 //        }
-//        return employeeService.geytEmplyeeUser();
+//        return employeeService.getEmployeeUser();
         List<Employee> l = employeeService.getEmployeeUser();
         try {
             if (l.size() <= 0) {
